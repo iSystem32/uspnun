@@ -1,0 +1,32 @@
+2026-11-08 13:22:15.171 [info] Extension host started
+2026-11-08 13:22:15.214 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-11-08 13:22:15.724 [info] Extension host started
+2026-11-08 13:22:15.737 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-11-08 13:22:15.744 [info] ExtensionService#_doActivateExtension ms-vscode.remote-repositories, startup: false, activationEvent: 'onFileSystem:vscode-vfs'
+2026-11-08 13:22:16.591 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'api', root cause: ms-vscode.remote-repositories
+2026-11-08 13:22:16.617 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2026-11-08 13:22:16.623 [info] ExtensionService#_doActivateExtension GitHub.remotehub, startup: false, activationEvent: 'api', root cause: ms-vscode.remote-repositories
+2026-11-08 13:22:16.693 [info] Eager extensions activated
+2026-11-08 13:22:16.704 [info] ExtensionService#_doActivateExtension ms-vscode.anycode, startup: false, activationEvent: 'onStartupFinished'
+2026-11-08 13:22:17.120 [error] TypeError: Cannot read properties of undefined (reading 'onDidChangeTimeline')
+	at wk.registerTimelineProvider (https://main.vscode-cdn.net/stable/c4453f8ea430795f941c1b2ff6c9321135a74a02/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:281:92434)
+	at Object.registerTimelineProvider (https://main.vscode-cdn.net/stable/c4453f8ea430795f941c1b2ff6c9321135a74a02/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:281:169185)
+	at Ks.ensureProviderRegistration (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.42.0/extension/dist/browser/extension.js#vscode-extension:175:3249)
+	at Ks.onProvidersChanged (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.42.0/extension/dist/browser/extension.js#vscode-extension:175:1122)
+	at w._deliver (https://main.vscode-cdn.net/stable/c4453f8ea430795f941c1b2ff6c9321135a74a02/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:28:3644)
+	at w.fire (https://main.vscode-cdn.net/stable/c4453f8ea430795f941c1b2ff6c9321135a74a02/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:28:3962)
+	at Object.register (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.42.0/extension/dist/browser/extension.js#vscode-extension:61:5515)
+	at Object.registerVirtualProviderService (https://github.vscode-unpkg.net/GitHub/remotehub/0.65.0/extension/dist/browser/extension.js#vscode-extension:630:52051)
+	at eval (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.42.0/extension/dist/browser/extension.js#vscode-extension:194:11856)
+2026-11-08 13:22:17.159 [error] TypeError: Cannot read properties of undefined (reading 'onDidChangeTimeline')
+	at wk.registerTimelineProvider (https://main.vscode-cdn.net/stable/c4453f8ea430795f941c1b2ff6c9321135a74a02/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:281:92434)
+	at Object.registerTimelineProvider (https://main.vscode-cdn.net/stable/c4453f8ea430795f941c1b2ff6c9321135a74a02/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:281:169185)
+	at Ks.ensureProviderRegistration (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.42.0/extension/dist/browser/extension.js#vscode-extension:175:3249)
+	at Ks.onProvidersChanged (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.42.0/extension/dist/browser/extension.js#vscode-extension:175:1122)
+	at w._deliver (https://main.vscode-cdn.net/stable/c4453f8ea430795f941c1b2ff6c9321135a74a02/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:28:3644)
+	at w.fire (https://main.vscode-cdn.net/stable/c4453f8ea430795f941c1b2ff6c9321135a74a02/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:28:3962)
+	at Object.register (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.42.0/extension/dist/browser/extension.js#vscode-extension:61:5515)
+	at Object.registerVirtualProviderService (https://github.vscode-unpkg.net/GitHub/remotehub/0.65.0/extension/dist/browser/extension.js#vscode-extension:630:52169)
+	at eval (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.42.0/extension/dist/browser/extension.js#vscode-extension:194:11856)
+2026-11-08 13:22:20.433 [info] Eager extensions activated
+2026-11-08 13:22:20.624 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
