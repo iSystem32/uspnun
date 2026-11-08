@@ -1,0 +1,135 @@
+2026-11-08 13:38:02.949 [warning] Running on the web in a webworker; workspaceId=733bba08; storageUri=vscode-userdata:/User/globalStorage/github.remotehub
+2026-11-08 13:38:02.949 [info] [    2] ChangeStore.getWorkspacesWithChanges()
+2026-11-08 13:38:02.949 [info] [    6] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/settings.json)
+2026-11-08 13:38:02.949 [info] [    8] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/tasks.json)
+2026-11-08 13:38:02.949 [info] [   10] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/launch.json)
+2026-11-08 13:38:02.949 [info] [   12] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/mcp.json)
+2026-11-08 13:38:02.950 [info] [   26] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.mcp.json)
+2026-11-08 13:38:02.950 [info] [   28] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.git/config)
+2026-11-08 13:38:02.950 [info] [   30] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/extensions.json)
+2026-11-08 13:38:02.950 [info] [   32] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.claude/settings.json)
+2026-11-08 13:38:02.950 [info] [   34] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.github/copilot/settings.json)
+2026-11-08 13:38:02.950 [info] [    6] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/settings.json): Not found; no operations
+2026-11-08 13:38:02.950 [info] [    8] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/tasks.json): Not found; no operations
+2026-11-08 13:38:02.951 [info] [    6] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/settings.json) took 23 ms
+2026-11-08 13:38:02.951 [info] [   10] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/launch.json): Not found; no operations
+2026-11-08 13:38:02.951 [info] [    8] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/tasks.json) took 27 ms
+2026-11-08 13:38:02.951 [info] [   12] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/mcp.json): Not found; no operations
+2026-11-08 13:38:02.951 [info] [    2] ChangeStore.getWorkspacesWithChanges() took 143 ms
+2026-11-08 13:38:02.951 [info] [   10] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/launch.json) took 28 ms
+2026-11-08 13:38:02.951 [info] [   12] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/mcp.json) took 28 ms
+2026-11-08 13:38:02.951 [info] [   26] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.mcp.json): Not found; no operations
+2026-11-08 13:38:02.952 [info] [   28] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.git/config): Not found; no operations
+2026-11-08 13:38:02.952 [info] [   26] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.mcp.json) took 39 ms
+2026-11-08 13:38:02.952 [info] [   30] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/extensions.json): Not found; no operations
+2026-11-08 13:38:02.952 [info] [   28] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.git/config) took 40 ms
+2026-11-08 13:38:02.952 [info] [   32] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.claude/settings.json): Not found; no operations
+2026-11-08 13:38:02.952 [info] [   30] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.vscode/extensions.json) took 42 ms
+2026-11-08 13:38:02.952 [info] [   34] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.github/copilot/settings.json): Not found; no operations
+2026-11-08 13:38:02.952 [info] [   32] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.claude/settings.json) took 44 ms
+2026-11-08 13:38:02.952 [info] [   34] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/.github/copilot/settings.json) took 44 ms
+2026-11-08 13:38:02.953 [info] [   49] GitHub.createMetadata(vscode-vfs://github/iSystem32/uspnun, undefined)
+2026-11-08 13:38:02.953 [info] Parsed metadata for vscode-vfs://github/iSystem32/uspnun: name iSystem32/uspnun, owner iSystem32, name uspnun, ref undefined
+2026-11-08 13:38:02.953 [info] [   50] GitHub.ensureAuthenticated
+2026-11-08 13:38:02.953 [info] [   51] GitHub.sync(vscode-vfs://github/iSystem32/uspnun, resolution=0, to=undefined)
+2026-11-08 13:38:02.953 [info] [   52] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=true, to=undefined)
+2026-11-08 13:38:02.953 [info] [   53] GitHub.sync(vscode-vfs://github/iSystem32/uspnun, resolution=0, to=undefined)
+2026-11-08 13:38:02.953 [info] [   54] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=true, to=undefined)
+2026-11-08 13:38:02.995 [info] [   50] GitHub.ensureAuthenticated took 117 ms
+2026-11-08 13:38:03.902 [info] [   49] GitHub.createMetadata(vscode-vfs://github/iSystem32/uspnun, undefined) • Prefetching tree for 252f537f4e7b88e7b73fc23e3789e2f641ea3e59...
+2026-11-08 13:38:03.905 [info] [   56] GitHub.createFileTree(github://github/iSystem32/uspnun:252f537f4e7b88e7b73fc23e3789e2f641ea3e59)
+2026-11-08 13:38:03.908 [info] [   57] FileTree.load(252f537f4e7b88e7b73fc23e3789e2f641ea3e59:undefined)
+2026-11-08 13:38:03.910 [info] [   58] FileTree.load(252f537f4e7b88e7b73fc23e3789e2f641ea3e59:)
+2026-11-08 13:38:03.913 [info] [   59] FileTree.load(252f537f4e7b88e7b73fc23e3789e2f641ea3e59:.vscode)
+2026-11-08 13:38:03.916 [info] [   56] GitHub.createFileTree(github://github/iSystem32/uspnun:252f537f4e7b88e7b73fc23e3789e2f641ea3e59) took 7 ms
+2026-11-08 13:38:03.919 [warning] [   49] GitHub.createMetadata(vscode-vfs://github/iSystem32/uspnun, undefined) took 1045 ms • HEAD=252f537f4e7b88e7b73fc23e3789e2f641ea3e59
+2026-11-08 13:38:04.109 [info] [   58] FileTree.load(252f537f4e7b88e7b73fc23e3789e2f641ea3e59:): Tree=252f537f4e7b88e7b73fc23e3789e2f641ea3e59; Tree query took 157 ms • Waiting for permissions...
+2026-11-08 13:38:04.110 [info] [   58] FileTree.load(252f537f4e7b88e7b73fc23e3789e2f641ea3e59:) Permissions query took 0 ms • Filling trie...
+2026-11-08 13:38:04.111 [info] [   58] FileTree.load(252f537f4e7b88e7b73fc23e3789e2f641ea3e59:) took 159 ms (Filling trie took 1 ms) • Tree=252f537f4e7b88e7b73fc23e3789e2f641ea3e59
+2026-11-08 13:38:04.145 [warning] [    1] Time to root directory took 1437 ms
+2026-11-08 13:38:04.303 [info] [  100] GitHub.getFileList(github://github/iSystem32/uspnun)
+2026-11-08 13:38:04.306 [info] [  103] GitHub.getFileList(github://github/iSystem32/uspnun)
+2026-11-08 13:38:04.312 [info] [   57] FileTree.load(252f537f4e7b88e7b73fc23e3789e2f641ea3e59:undefined): Tree=252f537f4e7b88e7b73fc23e3789e2f641ea3e59; Tree query took 357 ms • Waiting for permissions...
+2026-11-08 13:38:04.313 [info] [   57] FileTree.load(252f537f4e7b88e7b73fc23e3789e2f641ea3e59:undefined) Permissions query took 0 ms • Filling trie...
+2026-11-08 13:38:04.313 [info] [   57] FileTree.load(252f537f4e7b88e7b73fc23e3789e2f641ea3e59:undefined) took 359 ms (Filling trie took 0 ms) • Tree=252f537f4e7b88e7b73fc23e3789e2f641ea3e59
+2026-11-08 13:38:04.339 [info] [  106] FileTree.loadAllContent(252f537f4e7b88e7b73fc23e3789e2f641ea3e59)
+2026-11-08 13:38:04.339 [info] [  107] TarPit.getTar(github/iSystem32/uspnun/252f537f4e7b88e7b73fc23e3789e2f641ea3e59)
+2026-11-08 13:38:04.341 [info] [  107] TarPit.getTar(github/iSystem32/uspnun/252f537f4e7b88e7b73fc23e3789e2f641ea3e59) • Getting .tar from memory...
+2026-11-08 13:38:04.342 [info] [  107] TarPit.getTar(github/iSystem32/uspnun/252f537f4e7b88e7b73fc23e3789e2f641ea3e59): Not found • Getting .tar from memory took 0 ms • Getting .tar from disk...
+2026-11-08 13:38:04.461 [error] eval
+HttpError: Not Found
+2026-11-08 13:38:04.465 [info] [   59] FileTree.load(252f537f4e7b88e7b73fc23e3789e2f641ea3e59:.vscode) took 486 ms (Tree query took 485 ms)• Loading for path=.vscode failed; HttpError: Not Found
+2026-11-08 13:38:04.494 [warning] [   54] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=true, to=undefined) took 1549 ms • Up to date
+2026-11-08 13:38:04.494 [warning] [   53] GitHub.sync(vscode-vfs://github/iSystem32/uspnun, resolution=0, to=undefined) took 1550 ms • to=252f537f4e7b88e7b73fc23e3789e2f641ea3e59
+2026-11-08 13:38:04.536 [warning] [   52] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=true, to=undefined) took 1591 ms • Up to date
+2026-11-08 13:38:04.537 [warning] [   51] GitHub.sync(vscode-vfs://github/iSystem32/uspnun, resolution=0, to=undefined) took 1593 ms • to=252f537f4e7b88e7b73fc23e3789e2f641ea3e59
+2026-11-08 13:38:04.565 [info] [  100] GitHub.getFileList(github://github/iSystem32/uspnun) took 367 ms
+2026-11-08 13:38:04.591 [info] [  103] GitHub.getFileList(github://github/iSystem32/uspnun) took 393 ms
+2026-11-08 13:38:04.830 [warning] [  107] TarPit.getTar(github/iSystem32/uspnun/252f537f4e7b88e7b73fc23e3789e2f641ea3e59) took 545 ms (Getting .tar from disk took 544 ms) • Skipped download
+2026-11-08 13:38:04.831 [warning] [  106] FileTree.loadAllContent(252f537f4e7b88e7b73fc23e3789e2f641ea3e59) took 548 ms (Tar cache query took 548 ms) • No cached Tar
+2026-11-08 13:39:02.775 [info] [  192] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined)
+2026-11-08 13:39:02.801 [info] [  193] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined)
+em32/uspnun, force=undefined, to=undefined) took 29 ms • Unable to fetch branch tips
+2026-11-08 13:39:02.861 [error] Function.SyncOrFetchError
+Error: Unable to fetch the repository
+2026-11-08 13:39:03.353 [warning] [  192] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined) took 571 ms • No changes detected
+2026-11-08 13:39:44.301 [info] [  196] TarPit.getTar(github/iSystem32/uspnun/252f537f4e7b88e7b73fc23e3789e2f641ea3e59) took 182 ms (Getting .tar from disk took 177 ms) • Skipped download
+2026-11-08 13:39:44.699 [warning] [  195] getFileContentsRetrieved workerxthost from web took 591 ms
+2026-11-08 13:40:02.841 [info] [  200] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined)
+2026-11-08 13:40:02.863 [error] resolveGitHubEnterpriseHost
+Unavailable (FileSystemError): The GitHub Enterprise repository does not identify a configured instance.
+2026-11-08 13:40:02.867 [info] [  200] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined) took 26 ms • Unable to fetch branch tips
+2026-11-08 13:40:02.872 [error] Function.SyncOrFetchError
+Error: Unable to fetch the repository
+2026-11-08 13:40:03.336 [info] [  201] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined)
+2026-11-08 13:40:03.619 [info] [  201] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined) took 273 ms • No changes detected
+2026-11-08 13:40:17.419 [info] [  204] TarPit.getTar(github/iSystem32/uspnun/252f537f4e7b88e7b73fc23e3789e2f641ea3e59) took 85 ms (Getting .tar from disk took 81 ms) • Skipped download
+2026-11-08 13:40:17.683 [info] [  203] getFileContentsRetrieved webEmbedder from web took 354 ms
+2026-11-08 13:40:34.527 [info] [  210] TarPit.getTar(github/iSystem32/uspnun/252f537f4e7b88e7b73fc23e3789e2f641ea3e59) took 122 ms (Getting .tar from disk took 118 ms) • Skipped download
+2026-11-08 13:40:34.779 [info] [  209] getFileContentsRetrieved README.md from web took 376 ms
+2026-11-08 13:40:42.580 [info] [  216] TarPit.getTar(github/iSystem32/uspnun/252f537f4e7b88e7b73fc23e3789e2f641ea3e59) took 76 ms (Getting .tar from disk took 73 ms) • Skipped download
+2026-11-08 13:40:42.857 [info] [  215] getFileContentsRetrieved DesktopWindowwing50(1).kt from web took 356 ms
+2026-11-08 13:41:02.907 [info] [  220] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined)
+2026-11-08 13:41:02.959 [error] resolveGitHubEnterpriseHost
+Unavailable (FileSystemError): The GitHub Enterprise repository does not identify a configured instance.
+2026-11-08 13:41:02.993 [info] [  220] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined) took 74 ms • Unable to fetch branch tips
+2026-11-08 13:41:02.996 [error] Function.SyncOrFetchError
+Error: Unable to fetch the repository
+2026-11-08 13:41:03.632 [info] [  221] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined)
+2026-11-08 13:41:04.222 [info] [  221] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined) took 348 ms • No changes detected
+2026-11-08 13:42:02.985 [info] [  222] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined)
+2026-11-08 13:42:02.992 [error] resolveGitHubEnterpriseHost
+Unavailable (FileSystemError): The GitHub Enterprise repository does not identify a configured instance.
+2026-11-08 13:42:03.002 [info] [  222] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined) took 8 ms • Unable to fetch branch tips
+2026-11-08 13:42:03.006 [error] Function.SyncOrFetchError
+Error: Unable to fetch the repository
+2026-11-08 13:42:03.981 [info] [  223] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined)
+2026-11-08 13:42:04.340 [info] [  223] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined) took 361 ms • No changes detected
+2026-11-08 13:42:49.678 [info] [  225] GitHub.sync(vscode-vfs://github/iSystem32/uspnun, resolution=0, to=undefined)
+2026-11-08 13:42:49.687 [info] [  226] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=true, to=undefined)
+2026-11-08 13:42:50.291 [warning] [  226] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=true, to=undefined) took 530 ms • Up to date
+2026-11-08 13:42:50.295 [warning] [  225] GitHub.sync(vscode-vfs://github/iSystem32/uspnun, resolution=0, to=undefined) took 537 ms • to=252f537f4e7b88e7b73fc23e3789e2f641ea3e59
+2026-11-08 13:43:02.991 [info] [  228] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined)
+2026-11-08 13:43:03.007 [error] resolveGitHubEnterpriseHost
+Unavailable (FileSystemError): The GitHub Enterprise repository does not identify a configured instance.
+2026-11-08 13:43:03.020 [info] [  228] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined) took 22 ms • Unable to fetch branch tips
+2026-11-08 13:43:03.029 [error] Function.SyncOrFetchError
+Error: Unable to fetch the repository
+2026-11-08 13:43:04.348 [info] [  229] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined)
+2026-11-08 13:43:04.723 [info] [  229] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined) took 369 ms • No changes detected
+2026-11-08 13:43:12.348 [info] [  235] ChangeStore.createFile(vscode-vfs://github/iSystem32/uspnun/Repositories.log) — 0
+2026-11-08 13:43:12.401 [info] [  235] ChangeStore.createFile(vscode-vfs://github/iSystem32/uspnun/Repositories.log) took 52 ms
+2026-11-08 13:43:12.743 [info] [  245] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/Repositories.log)
+2026-11-08 13:43:13.012 [info] [  245] ChangeStore.readFile(vscode-vfs://github/iSystem32/uspnun/Repositories.log) took 353 ms
+2026-11-08 13:43:31.922 [info] [  266] ChangeStore.updateDirectoryEntries(vscode-vfs://github/iSystem32/uspnun) — 4
+2026-11-08 13:43:31.933 [info] [  266] ChangeStore.updateDirectoryEntries(vscode-vfs://github/iSystem32/uspnun) took 3 ms
+2026-11-08 13:43:35.059 [info] [  271] ChangeStore.updateDirectoryEntries(vscode-vfs://github/iSystem32/uspnun) — 4
+2026-11-08 13:43:35.062 [info] [  271] ChangeStore.updateDirectoryEntries(vscode-vfs://github/iSystem32/uspnun) took 7 ms
+2026-11-08 13:44:03.028 [info] [  273] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined)
+2026-11-08 13:44:03.045 [error] resolveGitHubEnterpriseHost
+Unavailable (FileSystemError): The GitHub Enterprise repository does not identify a configured instance.
+2026-11-08 13:44:03.061 [info] [  273] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined) took 21 ms • Unable to fetch branch tips
+2026-11-08 13:44:03.070 [error] Function.SyncOrFetchError
+Error: Unable to fetch the repository
+2026-11-08 13:44:04.728 [info] [  274] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined)
+2026-11-08 13:44:05.642 [warning] [  274] GitHub.fetch(vscode-vfs://github/iSystem32/uspnun, force=undefined, to=undefined) took 797 ms • No changes detected
