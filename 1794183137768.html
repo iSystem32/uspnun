@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="it-rUS">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monoscope Canvas - CMD Terminal & Autonomous Parser Engine</title>
+    <style>
+        :root {
+            --bg-color: #080a0f;
+            --panel-bg: rgba(17, 24, 39, 0.95);
+            --border-color: rgba(255, 255, 255, 0.12);
+            --ascii-cell-bg: #111827;
+            --ascii-active-bg: #4f46e5;
+            --orange-process: #f97316;
+            --yellow-ia: #eab308;
+            --green-tag: #22c55e;
+            --blue-nav: #06b6d4;
+            --red-indicator: #ef4444;
+            --text-color: #e2e8f0;
+            --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-mono);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Contenedor Horizontal Fijo Monoscope 16:9 */
+        .monoscope-container {
+            width: 100vw;
+            height: 56.25vw;
+            max-height: 100vh;
+            max-width: 177.78vh;
+            background: #0d111a;
+            border: 2px solid var(--border-color);
+            position: relative;
+            display: grid;
+            grid-template-rows: 28px 1fr 50px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+            overflow: hidden;
+        }
+
+        .top-notification-bar {
+            background: #05070a;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 12px;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 11px;
+        }
+
+        .copilot-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 10px;
+        }
+
+        .status-pill {
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        .status-pill.ok { background: rgba(34, 197, 94, 0.2); color: var(--green-tag); }
+        .status-pill.paused { background: rgba(239, 68, 68, 0.2); color: var(--red-indicator); }
+
+        .workspace-grid {
+            display: grid;
+            grid-template-columns: 320px 1fr 300px;
+            gap: 10px;
+            padding: 10px;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .subwindow {
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .subwindow-header {
+            background: rgba(0, 0, 0, 0.4);
+            border-bottom: 1px solid var(--border-color);
+            padding: 4px 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 32px;
+        }
+
+        .subwindow-title {
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #94a3b8;
+        }
+
+        .subwindow-content {
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
+        /* Editor de Código con Cursor Libre e Interacción Total */
+        .code-editor-surface {
+            background: #05070a;
+            border: 1px solid #374151;
+            border-radius: 4px;
+            padding: 8px;
+            color: #38bdf8;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            width: 100%;
+            height: 110px;
+            resize: none;
+            outline: none;
+            cursor: text;
+        }
+
+        /* Teclado Virtual US-ASCII QWERTY */
+        .ascii-keyboard {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 3px;
+            background: #05070a;
+            padding: 6px;
+            border-radius: 4px;
+            border: 1px solid #1e293b;
+        }
+
+        .key-btn {
+            background: #111827;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #e2e8f0;
+            font-size: 9px;
+            padding: 5px 0;
+            text-align: center;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .key-btn:hover {
+            background: var(--blue-nav);
+            color: #000;
+        }
+
+        /* Terminal CMD Simulada */
+        .cmd-terminal {
+            background: #000;
+            border: 1px solid #22c55e;
+            border-radius: 4px;
+            padding: 8px;
+            font-family: var(--font-mono);
+            font-size: 10px;
+            color: #4ade80;
+            flex-grow: 1;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+
+        /* Puntero Magnético Libre (Seguimiento Real de Mouse) */
+        #mouse-pointer-anchor {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: var(--blue-nav);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 8px var(--blue-nav);
+            transition: transform 0.05s ease-out;
+        }
+
+        .action-btn {
+            background: rgba(34, 197, 94, 0.15);
+            border: 1px solid var(--green-tag);
+            color: var(--green-tag);
+            padding: 6px;
+            border-radius: 4px;
+            font-size: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .action-btn:hover {
+            background: var(--green-tag);
+            color: #000;
+        }
+
+        .bottom-bar {
+            background: #05070a;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 12px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="monoscope-container" id="monoscope">
+        
+        <!-- Puntero Libre de Ratón Dinámico -->
+        <div id="mouse-pointer-anchor"></div>
+
+        <!-- Copiloto Independiente en Notificaciones -->
+        <div class="top-notification-bar">
+            <div>MONOSCOPE CANVAS // ASCII ENGINE</div>
+            <div class="copilot-status">
+                <span>COPILOTO ENSAMBLADO:</span>
+                <span class="status-pill ok" id="copilot-pill">VERIFICANDO LIBRERÍAS...</span>
+            </div>
+            <div style="color: var(--blue-nav);">CMD EXECUTION MODE</div>
+        </div>
+
+        <div class="workspace-grid">
+
+            <!-- Subventana 1: Editor y Teclado QWERTY US-ASCII -->
+            <div class="subwindow">
+                <div class="subwindow-header">
+                    <span class="subwindow-title">� � Editor & Keypad ASCII</span>
+                </div>
+                <div class="subwindow-content">
+                    <textarea class="code-editor-surface" id="editor-field" placeholder="Escriba código o haga clic en cualquier posición..."></textarea>
+                    
+                    <button class="action-btn" id="btn-compile">� � GUARDAR Y COMPILAR</button>
+
+                    <div style="font-size: 9px; color: #94a3b8;">Teclado US-ASCII QWERTY:</div>
+                    <div class="ascii-keyboard" id="keyboard-grid">
+                        <!-- Botones de Teclas Generados Dinámicamente -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subventana 2: Terminal Simulada CMD -->
+            <div class="subwindow">
+                <div class="subwindow-header">
+                    <span class="subwindow-title"> � � Terminal CMD Simulada</span>
+                </div>
+                <div class="subwindow-content">
+                    <div class="cmd-terminal" id="cmd-output">Microsoft Windows [Version 10.0.19045]
+(c) Monoscope Corporation. Offline US-ASCII Environment.
+
+C:\MONOSCOPE> ready. Escriba un comando o guarde el código...</div>
+                </div>
+            </div>
+
+            <!-- Subventana 3: Registro de Caché & BIN Portfolio -->
+            <div class="subwindow">
+                <div class="subwindow-header">
+                    <span class="subwindow-title">⚙ Cache BIN / Hex Match</span>
+                </div>
+                <div class="subwindow-content">
+                    <div id="hex-match-log" style="font-size: 9px; color: var(--yellow-ia); white-space: pre-wrap; background: #000; padding: 6px; border: 1px solid #1e293b; height: 100%;">
+// Registro de Caché e Historial de Ensamblado:
+[SYS] Esperando compilación de datos.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom-bar">
+            <span style="color: #64748b;">MOUSE MESH: LIBRE SEGUIMIENTO</span>
+            <span style="color: var(--green-tag);">AUTONOMOUS VERIFIER: RUNNING</span>
+        </div>
+
+    </div>
+
+    <script>
+        // 1. Seguimiento de Ratón Totalmente Libre sin Bloqueo al Centro
+        const monoscope = document.getElementById('monoscope');
+        const pointer = document.getElementById('mouse-pointer-anchor');
+
+        monoscope.addEventListener('mousemove', (e) => {
+            const rect = monoscope.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            pointer.style.left = `${x}px`;
+            pointer.style.top = `${y}px`;
+        });
+
+        // 2. Generación del Teclado QWERTY US-ASCII
+        const keyboardGrid = document.getElementById('keyboard-grid');
+        const editorField = document.getElementById('editor-field');
+
+        const keys = [
+            '33 33 20 33 33 20 32 30 20 33 33 20 33 33 20 32 ','
+ 33 33 20 33 33 20 32 30 20 33 33 20 33 34 20 32',' 33 33 20 33 34 20 32 30 20 33 33 20 33 33 20 32','
+ 33 34 20 33 33 20 32 30 20 33 36 20 34 36 20 32','
+ 43 6F 72 70 6F 72 61 74 69 6F 6E 2E 20 4F 66 66','
+ 34 33 20 36 46 20 37 32 20 37 30 20 36 46 20 37','7','8','9','0',
+            'Q','W','E','R','T','Y','U','I','O','P',
+            'A','S','D','F','G','H','J','K','L',';',
+            'Z','X','C','V','B','N','M',',','.','/'
+        ];
+
+        keys.forEach(k => {
+            const btn = document.createElement('div');
+            btn.className = 'key-btn';
+            btn.textContent = k;
+            btn.addEventListener('click', () => {
+                const start = editorField.selectionStart;
+                const end = editorField.selectionEnd;
+                const val = editorField.value;
+                editorField.value = val.substring(0, start) + k + val.substring(end);
+                editorField.focus();
+                editorField.selectionStart = editorField.selectionEnd = start + 1;
+            });
+            keyboardGrid.appendChild(btn);
+        });
+
+        // 3. Copiloto Independiente & Compilador CMD
+        const btnCompile = document.getElementById('btn-compile');
+        const copilotPill = document.getElementById('copilot-pill');
+        const cmdOutput = document.getElementById('cmd-output');
+        const hexLog = document.getElementById('hex-match-log');
+
+        btnCompile.addEventListener('click', () => {
+            const code = editorField.value.trim();
+
+            copilotPill.className = "status-pill paused";
+            copilotPill.textContent = "VERIFICANDO ENSAMBLADO...";
+
+            setTimeout(() => {
+                // Validación de Sintaxis BÁSICA (Delimitadores)
+                const openBrackets = (code.match(/[\(\[\{]/g) || []).length;
+                const closeBrackets = (code.match(/[\)\]\}]/g) || []).length;
+
+                if (openBrackets !== closeBrackets) {
+                    // Detener Proceso en caso de Error
+                    copilotPill.className = "status-pill paused";
+                    copilotPill.textContent = "ERROR ENSAMBLADO: DELIMITADORES NO COINCIDEN";
+                    
+                    cmdOutput.textContent += `\n\nC:\\MONOSCOPE> build error\n[ERROR] Error de compilación: Sintaxis de paréntesis/corchetes desalineada. Proceso detenido.`;
+                    cmdOutput.scrollTop = cmdOutput.scrollHeight;
+                } else {
+                    // Verificación Correcta y Salida CMD
+                    copilotPill.className = "status-pill ok";
+                    copilotPill.textContent = "COMPILACIÓN CORRECTA";
+
+                    cmdOutput.textContent += `\n\nC:\\MONOSCOPE> exec_process.exe\n[OK] Compilación finalizada sin errores.\n[CMD] Proceso en ejecución: "${code.slice(0, 30)}..."`;
+                    cmdOutput.scrollTop = cmdOutput.scrollHeight;
+
+                    // Generar Log Hexadecimal
+                    let hexStr = '';
+                    for (let i = 0; i < Math.min(code.length, 16); i++) {
+                        hexStr += code.charCodeAt(i).toString(16).toUpperCase() + ' ';
+                    }
+                    hexLog.textContent += `\n[BUILD OK] Hex Signature: ${hexStr}`;
+                }
+            }, 600);
+        });
+    </script>
+</body>
+</html>
