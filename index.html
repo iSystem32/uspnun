@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Launcher - Commits del Nodo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html { width: 100%; height: 100%; overflow: hidden; font-family: system-ui, sans-serif; }
+
+        .wallpaper-container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url('fondo.png'); /* Asegúrate de que tu imagen se llame así o cámbialo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .commits-panel {
+            background: rgba(20, 20, 20, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 700px;
+            max-height: 75vh;
+            overflow-y: auto;
+            color: #fff;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 8px;
+            color: #4ade80;
+        }
+
+        .commit-item {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+        }
+
+        .commit-item:last-child {
+            border-bottom: none;
+        }
+
+        .commit-hash {
+            font-family: monospace;
+            color: #60a5fa;
+            background: rgba(96, 165, 250, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .commit-msg {
+            margin-top: 4px;
+            color: #e5e7eb;
+        }
+
+        .commit-meta {
+            font-size: 0.75rem;
+            color: #9ca3af;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wallpaper-container">
+        <div class="commits-panel">
+            <h1>📦 Historial de Commits del Nodo Local</h1>
+            <div id="commits-list">Cargando commits desde el repositorio...</div>
+        </div>
+    </div>
+
+    <script>
+        async function cargarCommits() {
+            try {
+                const response = await fetch('/api/commits');
+                const commits = await response.json();
+                
+                const contenedor = document.getElementById('commits-list');
+                contenedor.innerHTML = '';
+
+                if (commits.length === 0) {
+                    contenedor.innerHTML = '<p>No se encontraron commits en este repositorio.</p>';
+                    return;
+                }
+
+                commits.forEach(c => {
+                    const item = document.createElement('div');
+                    item.className = 'commit-item';
+                    item.innerHTML = `
+                        <div>
+                            <span class="commit-hash">${c.hash}</span>
+                            <span style="float: right;" class="commit-meta">${c.date}</span>
+                        </div>
+                        <div class="commit-msg">${c.message}</div>
+                        <div class="commit-meta">Autor: ${c.author}</div>
+                    `;
+                    contenedor.appendChild(item);
+                });
+            } catch (error) {
+                document.getElementById('commits-list').innerHTML = '<p style="color: #f87171;">Error al conectar con el servidor de Git local.</p>';
+            }
+        }
+
+        cargarCommits();
+    </script>
+</body>
+</html>
