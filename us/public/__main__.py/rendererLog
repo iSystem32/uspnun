@@ -651,3 +651,190 @@
     at async https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:1223:1994
 2026-11-10 21:30:59.015 [info] [Window] Extension host (LocalWebWorker) is unresponsive.
 2026-11-10 21:30:59.016 [info] [Window] Extension host (LocalWebWorker) is responsive.
+2026-11-11 01:55:32.388 [warning] [Window] Ignoring the error while validating workspace folder vscode-vfs://github/iSystem32/uspnun - ENOPRO: No file system provider found for resource 'vscode-vfs://github/iSystem32/uspnun'
+2026-11-11 01:55:32.747 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.remote-repositories' wants API proposal 'timeline' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2026-11-11 01:55:32.748 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'github.vscode-pull-request-github' wants API proposal 'agentsWindowActivation' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2026-11-11 01:55:32.748 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'github.remotehub' wants API proposal 'timeline' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2026-11-11 01:55:33.239 [info] [Window] [RemoteAgentHost] Reconciling: desired=[], current=[]
+2026-11-11 01:55:33.255 [info] [Window] [AgentHost:remote] Initializing (remoteAuthority=none)
+2026-11-11 01:55:33.255 [warning] [Window] [AgentHost:remote] No remote agent connection available. Not connecting.
+2026-11-11 01:55:35.287 [error] [Network] #2: https://main.vscode-cdn.net/extensions/marketplace.json - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:35.408 [info] [Window] Found additional builtin extension gallery resources in env ["https://github.vscode-unpkg.net/GitHub/vscode-pull-request-github/0.176.1/extension","https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-server/1.5.4/extension","https://github.vscode-unpkg.net/GitHub/remotehub/0.66.0/extension","https://ms-vscode.vscode-unpkg.net/ms-vscode/anycode/0.0.75/extension","https://github.vscode-unpkg.net/GitHub/codespaces/1.18.17/extension","https://ms-vscode.vscode-unpkg.net/ms-vscode/azure-repos/0.40.0/extension","https://ms-vscode.vscode-unpkg.net/ms-vscode/anycode-kotlin/0.0.8/extension","https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-explorer/0.5.0/extension","https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.44.0/extension","https://ms-vscode.vscode-unpkg.net/ms-vscode/anycode-rust/0.0.8/extension","https://ms-vscode.vscode-unpkg.net/ms-vscode/anycode-c-sharp/0.0.8/extension","https://ms-vscode.vscode-unpkg.net/ms-vscode/anycode-java/0.0.8/extension","https://ms-vscode.vscode-unpkg.net/ms-vscode/anycode-go/0.0.8/extension","https://ms-vscode.vscode-unpkg.net/ms-vscode/anycode-php/0.0.8/extension","https://ms-vscode.vscode-unpkg.net/ms-vscode/anycode-typescript/0.0.7/extension","https://ms-vscode.vscode-unpkg.net/ms-vscode/anycode-cpp/0.0.7/extension","https://ms-vscode.vscode-unpkg.net/ms-vscode/anycode-python/0.0.7/extension"]
+2026-11-11 01:55:39.091 [error] [Window] Extension 'ms-vscode.remote-repositories' wants API proposal 'timeline' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2026-11-11 01:55:39.151 [info] [Window] Placing extension(s) vscode.git-base, vscode.github-authentication, ms-vscode.anycode, GitHub.remotehub, ms-vscode.azure-repos, GitHub.vscode-pull-request-github, ms-vscode.remote-repositories on a separate extension host.
+2026-11-11 01:55:42.190 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:55:42.286 [info] [Window] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-11-11 01:55:42.803 [error] [Network] #4: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-vscode/anycode/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.803 [error] [Network] #5: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-vscode/anycode-kotlin/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.803 [error] [Network] #6: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-vscode/anycode-c-sharp/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.803 [error] [Network] #7: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-vscode/anycode-php/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.803 [error] [Network] #8: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-vscode/anycode-java/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.804 [error] [Network] #9: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-vscode/anycode-python/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.804 [error] [Network] #10: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-vscode/anycode-cpp/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.804 [error] [Network] #11: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-vscode/anycode-rust/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.804 [error] [Network] #12: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-vscode/anycode-typescript/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.804 [error] [Network] #13: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-vscode/anycode-go/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.804 [error] [Network] #14: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/github/remotehub/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.804 [error] [Network] #15: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/github/codespaces/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.805 [error] [Network] #16: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-vscode/remote-server/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.805 [error] [Network] #17: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-vscode/azure-repos/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.805 [error] [Network] #18: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/github/vscode-pull-request-github/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.805 [error] [Network] #19: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-vscode/remote-explorer/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.805 [error] [Network] #20: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/ms-vscode/remote-repositories/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.815 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.815 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-kotlin from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.816 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-c-sharp from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.816 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-php from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.817 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-java from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.817 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-python from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.818 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-cpp from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.818 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-rust from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.819 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-typescript from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.820 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-go from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.820 [error] [Window] Error while getting the latest version for the extension github.remotehub from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.821 [error] [Window] Error while getting the latest version for the extension github.codespaces from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.821 [error] [Window] Error while getting the latest version for the extension ms-vscode.remote-server from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.822 [error] [Window] Error while getting the latest version for the extension ms-vscode.azure-repos from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.822 [error] [Window] Error while getting the latest version for the extension github.vscode-pull-request-github from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.823 [error] [Window] Error while getting the latest version for the extension ms-vscode.remote-explorer from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.823 [error] [Window] Error while getting the latest version for the extension ms-vscode.remote-repositories from https://marketplace.visualstudio.com/_apis/public/gallery/vscode/{publisher}/{name}/latest. Trying the fallback https://www.vscode-unpkg.net/_gallery/{publisher}/{name}/latest Failed
+2026-11-11 01:55:42.843 [error] [Network] #21: https://www.vscode-unpkg.net/_gallery/ms-vscode/anycode/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.843 [error] [Network] #22: https://www.vscode-unpkg.net/_gallery/ms-vscode/anycode-kotlin/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.843 [error] [Network] #23: https://www.vscode-unpkg.net/_gallery/ms-vscode/anycode-c-sharp/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.843 [error] [Network] #24: https://www.vscode-unpkg.net/_gallery/ms-vscode/anycode-php/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.843 [error] [Network] #25: https://www.vscode-unpkg.net/_gallery/ms-vscode/anycode-java/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.843 [error] [Network] #26: https://www.vscode-unpkg.net/_gallery/ms-vscode/anycode-python/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.844 [error] [Network] #27: https://www.vscode-unpkg.net/_gallery/ms-vscode/anycode-cpp/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.844 [error] [Network] #28: https://www.vscode-unpkg.net/_gallery/ms-vscode/anycode-rust/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.844 [error] [Network] #29: https://www.vscode-unpkg.net/_gallery/ms-vscode/anycode-typescript/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.844 [error] [Network] #30: https://www.vscode-unpkg.net/_gallery/ms-vscode/anycode-go/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.844 [error] [Network] #31: https://www.vscode-unpkg.net/_gallery/github/remotehub/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.844 [error] [Network] #32: https://www.vscode-unpkg.net/_gallery/github/codespaces/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.844 [error] [Network] #33: https://www.vscode-unpkg.net/_gallery/ms-vscode/remote-server/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.844 [error] [Network] #34: https://www.vscode-unpkg.net/_gallery/ms-vscode/azure-repos/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.844 [error] [Network] #35: https://www.vscode-unpkg.net/_gallery/github/vscode-pull-request-github/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.845 [error] [Network] #36: https://www.vscode-unpkg.net/_gallery/ms-vscode/remote-explorer/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.845 [error] [Network] #37: https://www.vscode-unpkg.net/_gallery/ms-vscode/remote-repositories/latest - error GET AbortSignal.timeout is not a function
+2026-11-11 01:55:42.861 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.862 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-kotlin. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.863 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-c-sharp. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.864 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-php. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.864 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-java. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.865 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-python. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.866 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-cpp. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.866 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-rust. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.867 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-typescript. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.868 [error] [Window] Error while getting the latest version for the extension ms-vscode.anycode-go. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.868 [error] [Window] Error while getting the latest version for the extension github.remotehub. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.869 [error] [Window] Error while getting the latest version for the extension github.codespaces. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.870 [error] [Window] Error while getting the latest version for the extension ms-vscode.remote-server. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.870 [error] [Window] Error while getting the latest version for the extension ms-vscode.azure-repos. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.871 [error] [Window] Error while getting the latest version for the extension github.vscode-pull-request-github. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.872 [error] [Window] Error while getting the latest version for the extension ms-vscode.remote-explorer. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:42.872 [error] [Window] Error while getting the latest version for the extension ms-vscode.remote-repositories. TypeError: AbortSignal.timeout is not a function
+2026-11-11 01:55:43.198 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:55:44.230 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:55:44.721 [info] [Window] [RemoteAgentHost] Reconciling: desired=[], current=[]
+2026-11-11 01:55:45.681 [error] [Window] TypeError: this.local.toSorted is not a function or its return value is not iterable
+    at ast.getEnabledLocalMcpServers (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:3931:21540)
+    at Nrt.sync (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:3858:64206)
+    at Nrt.start (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:3858:63905)
+    at _G._runFn (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:3864:13018)
+    at _G._run (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:32:6694)
+    at new _G (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:32:5832)
+    at de (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:32:8934)
+    at new tst (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:3864:12835)
+    at s._createInstance (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:2091:2000)
+    at s.createInstance (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:2091:1440)
+    at safeCreateContribution (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:640:50274)
+    at l (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:640:49875)
+2026-11-11 01:55:45.716 [info] [Window] Updating additional builtin extensions cache
+2026-11-11 01:55:45.924 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:55:47.192 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:55:47.544 [info] [Window] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-11-11 01:55:48.409 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:55:51.591 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:55:52.482 [error] [Window] [Extension Host] TypeError: Cannot redefine property: name
+	at defineProperty (<anonymous>)
+	at n (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.44.0/extension/dist/browser/extension.js#vscode-extension:3:45)
+	at Object.2031 (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.44.0/extension/dist/browser/extension.js#vscode-extension:3:20301)
+	at Function.__webpack_require__ (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.44.0/extension/dist/browser/extension.js#vscode-extension:35:36236)
+	at async getAICore (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.44.0/extension/dist/browser/extension.js#vscode-extension:36:5586)
+	at async oneDataSystemClientFactory (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.44.0/extension/dist/browser/extension.js#vscode-extension:36:6443)
+2026-11-11 01:55:52.801 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:55:54.654 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:55:55.471 [error] [Window] TypeError: Cannot read properties of undefined (reading 'onDidChangeTimeline')
+	at wk.registerTimelineProvider (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:281:92434)
+	at Object.registerTimelineProvider (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:281:169185)
+	at Qc.ensureProviderRegistration (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.44.0/extension/dist/browser/extension.js#vscode-extension:176:3669)
+	at Qc.onProvidersChanged (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.44.0/extension/dist/browser/extension.js#vscode-extension:176:1194)
+	at w._deliver (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:28:3644)
+	at w.fire (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:28:3962)
+	at fa.register (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.44.0/extension/dist/browser/extension.js#vscode-extension:63:5308)
+	at Object.registerVirtualProviderService (https://github.vscode-unpkg.net/GitHub/remotehub/0.66.0/extension/dist/browser/extension.js#vscode-extension:630:52051)
+	at eval (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.44.0/extension/dist/browser/extension.js#vscode-extension:195:13325)
+2026-11-11 01:55:55.492 [error] [Window] TypeError: Cannot read properties of undefined (reading 'onDidChangeTimeline')
+	at wk.registerTimelineProvider (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:281:92434)
+	at Object.registerTimelineProvider (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:281:169185)
+	at Qc.ensureProviderRegistration (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.44.0/extension/dist/browser/extension.js#vscode-extension:176:3669)
+	at Qc.onProvidersChanged (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.44.0/extension/dist/browser/extension.js#vscode-extension:176:1194)
+	at w._deliver (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:28:3644)
+	at w.fire (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/api/worker/extensionHostWorkerMain.js?vscode-coi=2:28:3962)
+	at fa.register (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.44.0/extension/dist/browser/extension.js#vscode-extension:63:5308)
+	at Object.registerVirtualProviderService (https://github.vscode-unpkg.net/GitHub/remotehub/0.66.0/extension/dist/browser/extension.js#vscode-extension:630:52169)
+	at eval (https://ms-vscode.vscode-unpkg.net/ms-vscode/remote-repositories/0.44.0/extension/dist/browser/extension.js#vscode-extension:195:13325)
+2026-11-11 01:55:55.516 [error] [Window] [Extension Host] TypeError: Cannot redefine property: name
+	at defineProperty (<anonymous>)
+	at n (https://github.vscode-unpkg.net/GitHub/remotehub/0.66.0/extension/dist/browser/extension.js#vscode-extension:3:146)
+	at Object.2031 (https://github.vscode-unpkg.net/GitHub/remotehub/0.66.0/extension/dist/browser/extension.js#vscode-extension:3:25695)
+	at Function.__webpack_require__ (https://github.vscode-unpkg.net/GitHub/remotehub/0.66.0/extension/dist/browser/extension.js#vscode-extension:35:36439)
+	at async getAICore (https://github.vscode-unpkg.net/GitHub/remotehub/0.66.0/extension/dist/browser/extension.js#vscode-extension:94:21244)
+	at async oneDataSystemClientFactory (https://github.vscode-unpkg.net/GitHub/remotehub/0.66.0/extension/dist/browser/extension.js#vscode-extension:94:22101)
+2026-11-11 01:55:55.728 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:55:57.124 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:55:57.297 [error] [Window] TypeError: this.local.toSorted is not a function or its return value is not iterable
+    at ast.getEnabledLocalMcpServers (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:3931:21540)
+    at Nrt.sync (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:3858:64206)
+    at https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:3858:63890
+    at op.queue (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:31:74706)
+    at iWe.value (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:3858:63875)
+    at M._deliver (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:30:3669)
+    at M._deliverQueue (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:30:3758)
+    at M.fire (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:30:4093)
+    at ast.queryLocalForGeneration (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:3931:20863)
+    at async ast.queryLocal (https://main.vscode-cdn.net/stable/dcd3ad6e368fbe19d03f37054a40dbaf40d676f4/out/vs/workbench/workbench.web.main.internal.js:3931:20426)
+2026-11-11 01:55:58.582 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:55:59.895 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:56:00.784 [info] [Window] Settings Sync: Account status changed from uninitialized to available
+2026-11-11 01:56:01.824 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:56:03.016 [info] [Cloud Changes] Resuming cloud changes, reason: cloud changes enabled...
+2026-11-11 01:56:03.016 [info] [Cloud Changes] Checking for pending cloud changes...
+2026-11-11 01:56:03.019 [info] [Cloud Changes] Searching for existing authentication session with ID fd320a549c2db741
+2026-11-11 01:56:03.035 [info] [Cloud Changes] Found existing authentication session with ID fd320a549c2db741
+2026-11-11 01:56:03.037 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:56:03.309 [info] [Cloud Changes] Aborting resuming edit session as no edit session content is available to be applied
+2026-11-11 01:56:04.203 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:56:06.871 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:56:08.566 [warning] [Window] MCP migration: Failed to parse MCP config from vscode-userdata:/User/settings.json: Unexpected token c in JSON at position 0
+2026-11-11 01:56:09.290 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:56:10.333 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:56:43.151 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:57:15.105 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:57:21.691 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:57:22.909 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:57:24.133 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:57:25.351 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:58:11.618 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:58:16.150 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:58:56.470 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:59:08.459 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:59:21.331 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:59:26.432 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 01:59:32.231 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 02:00:02.194 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 02:00:21.582 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 02:00:33.679 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 02:00:35.002 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 02:00:37.781 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2026-11-11 02:00:40.492 [error] [Network] #48: https://main.vscode-cdn.net/extensions/marketplace.json - error GET AbortSignal.timeout is not a function
+2026-11-11 02:00:55.115 [error] [Window] An unknown error occurred. Please consult the log for more details.
