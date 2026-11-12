@@ -1,0 +1,122 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<rss version="2.0">
+<channel>
+<title>developer.chrome.com: Blog</title>
+<link>https://developer.chrome.com/blog/</link>
+<description>All of developer.chrome.com articles.</description>
+<lastBuildDate>Wed, 07 Oct 2026 09:21:14 GMT</lastBuildDate>
+<docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+<generator>developer.chrome.com</generator>
+<language>en-US</language>
+<item>
+<title>
+<![CDATA[ What's New in WebGPU (Chrome 155-156) ]]>
+</title>
+<link>https://developer.chrome.com/blog/new-in-webgpu-155-156?hl=en</link>
+<guid>https://developer.chrome.com/blog/new-in-webgpu-155-156?hl=en</guid>
+<pubDate>Wed, 07 Oct 2026 07:00:00 GMT</pubDate>
+<description>
+<![CDATA[ WGSL fragment_depth extension, texture compression unaligned, srgb-linear and display-p3-linear color spaces, snorm10-10-10-2 vertex format, and more. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Shipping JPEG XL in Chrome ]]>
+</title>
+<link>https://developer.chrome.com/blog/jpeg-xl-in-chrome?hl=en</link>
+<guid>https://developer.chrome.com/blog/jpeg-xl-in-chrome?hl=en</guid>
+<pubDate>Tue, 06 Oct 2026 07:00:00 GMT</pubDate>
+<description>
+<![CDATA[ JPEG XL offers better compression than JPEG, built-in HDR support, lossless JPEG transcoding, and more. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Email verification updates, October 2026 ]]>
+</title>
+<link>https://developer.chrome.com/blog/email-verification-october-2026?hl=en</link>
+<guid>https://developer.chrome.com/blog/email-verification-october-2026?hl=en</guid>
+<pubDate>Mon, 05 Oct 2026 07:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Updates to the Email Verification origin trial, including Android support, third-party origin trials, optional kid handling, and Sec-Fetch-Dest header changes. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Chrome 156 beta ]]>
+</title>
+<link>https://developer.chrome.com/blog/chrome-156-beta?hl=en</link>
+<guid>https://developer.chrome.com/blog/chrome-156-beta?hl=en</guid>
+<pubDate>Wed, 30 Sep 2026 07:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Chrome 156 is now in Beta. Check out the release notes. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ HTML-in-Canvas updates: Iterating toward a better Web API ]]>
+</title>
+<link>https://developer.chrome.com/blog/html-in-canvas-ot-changes?hl=en</link>
+<guid>https://developer.chrome.com/blog/html-in-canvas-ot-changes?hl=en</guid>
+<pubDate>Tue, 29 Sep 2026 07:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Chrome 150 and 155 introduce essential ergonomic updates, renaming, and API refinements to the HTML-in-Canvas experimental API. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Connection allowlists: Secure your web application's network access ]]>
+</title>
+<link>https://developer.chrome.com/blog/connection-allowlist-announcement?hl=en</link>
+<guid>https://developer.chrome.com/blog/connection-allowlist-announcement?hl=en</guid>
+<pubDate>Wed, 23 Sep 2026 07:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Chrome 152 introduces connection allowlists, a new security mechanism that lets you create a strict network sandbox for your documents and workers. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ New in Chrome 154 ]]>
+</title>
+<link>https://developer.chrome.com/blog/new-in-chrome-154?hl=en</link>
+<guid>https://developer.chrome.com/blog/new-in-chrome-154?hl=en</guid>
+<pubDate>Tue, 22 Sep 2026 07:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Responsively-sized iframes, CSS scroll-marker-group modes, and CSS text-decoration-inset. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ New in DevTools - October 2026 ]]>
+</title>
+<link>https://developer.chrome.com/blog/new-in-devtools-october-2026?hl=en</link>
+<guid>https://developer.chrome.com/blog/new-in-devtools-october-2026?hl=en</guid>
+<pubDate>Tue, 22 Sep 2026 07:00:00 GMT</pubDate>
+<description>
+<![CDATA[ DevTools MCP server updates, Ad script tracking in the Ads section in Application, and Full soft navigation support in Performance. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Enhance multitasking extensions with the new Tabs Split View API ]]>
+</title>
+<link>https://developer.chrome.com/blog/split-view-api-extensions?hl=en</link>
+<guid>https://developer.chrome.com/blog/split-view-api-extensions?hl=en</guid>
+<pubDate>Wed, 16 Sep 2026 07:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Enhance multitasking extensions with the new Tabs Split View API. ]]>
+</description>
+</item>
+<item>
+<title>
+<![CDATA[ Chrome 155 beta ]]>
+</title>
+<link>https://developer.chrome.com/blog/chrome-155-beta?hl=en</link>
+<guid>https://developer.chrome.com/blog/chrome-155-beta?hl=en</guid>
+<pubDate>Wed, 16 Sep 2026 07:00:00 GMT</pubDate>
+<description>
+<![CDATA[ Get a preview of the next Chrome release with this post detailing the features in the current beta. ]]>
+</description>
+</item>
+</channel>
+</rss>
